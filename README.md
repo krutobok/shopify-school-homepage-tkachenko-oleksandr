@@ -16,7 +16,7 @@ git clone https://github.com/krutobok/shopify-school-homepage-tkachenko-oleksand
 ```
 2. Navigate to the project folder:  
 ```bash
-cd your-repo
+cd shopify-school-homepage-tkachenko-oleksandr
 ```
 3. Install dependencies:  
 ```bash
