@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       priceEl.textContent = color.dataset.price
       allThumbs.forEach((thumb, index) => {
         const image = thumb.querySelector('.product__thumb-img')
-        image.src = `public/images/products/nike_air_max_plus/color${
+        image.src = `images/products/nike_air_max_plus/color${
           color.dataset.color
         }-${index + 1}.jpg`
         image.alt = `${color.dataset.altForGroup} photo ${index + 1}`
