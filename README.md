@@ -1,4 +1,4 @@
-# My Project
+# Shopify school homepage Tkachenko Oleksandr
 
 This repository contains a web project built with **Vite**.
 
@@ -6,7 +6,7 @@ This repository contains a web project built with **Vite**.
 
 - **Vite** – build tool for fast development
 - **HTML / SCSS / JavaScript**
-- [Optional: any other libraries you used, e.g., Axios, Swiper]
+- **Swiper**
 
 ## How to Run Locally
 
@@ -46,4 +46,4 @@ If I had more time, I would improve the project by:
 ## Deployment
 
 You can view the live project here:  
-[Your deployed project link]
+https://krutobok.github.io/shopify-school-homepage-tkachenko-oleksandr/
