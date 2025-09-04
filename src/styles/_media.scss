@@ -1,0 +1,229 @@
+@use 'variables' as *;
+
+@media (max-width: 1279px) {
+  .featured-collection {
+    &__slider-button--next,
+    &__slider-button--prev {
+      top: calc((100vw - #{$container-padding * 2} - 24px * 3) / 2.5 / 2);
+    }
+  }
+  .product {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    &__info {
+      gap: 24px;
+    }
+  }
+  .popup {
+    &__content {
+      margin-right: $container-padding;
+      margin-left: $container-padding;
+    }
+    &__text {
+      padding: 30px;
+    }
+    &__image {
+      max-width: 280px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .title-small {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    position: relative;
+    &__burger {
+      display: flex;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+      order: 1;
+      cursor: pointer;
+      span {
+        width: 18px;
+        height: 2px;
+        background-color: $primary-color;
+      }
+      &.menu__burger--active {
+        span {
+          position: absolute;
+          transform: rotateZ(45deg);
+          &:nth-child(2) {
+            transform: rotateZ(-45deg);
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+    &__cart {
+      order: 2;
+    }
+    &__list {
+      position: absolute;
+      left: -16px;
+      top: 104px;
+      background-color: $primary-bg-color;
+      z-index: 15;
+      width: 40px;
+      overflow-x: hidden;
+      flex-direction: column;
+      gap: 32px 0;
+      padding: 60px 16px;
+      border-bottom-right-radius: 8px;
+      transition: width 0.3s;
+      opacity: 0;
+      border-top: 1px solid $border-color;
+    }
+    &__list--active {
+      width: 300px;
+      opacity: 1;
+    }
+
+    &__logo {
+      position: absolute;
+      background-color: $primary-bg-color;
+      left: -16px;
+      top: 40px;
+      z-index: 15;
+      width: 40px;
+      opacity: 0;
+      padding-left: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      transition: width 0.3s;
+      overflow-x: hidden;
+    }
+    &__logo--active {
+      width: 300px;
+      opacity: 1;
+    }
+  }
+  .hero {
+    min-height: 600px;
+    &__slide {
+      min-height: 600px;
+    }
+    &__slide-wrapper {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+  .featured-collection__title,
+  .faq__text,
+  .form__title {
+    margin-bottom: 32px;
+  }
+  .product {
+    &__wrapper {
+      align-items: stretch;
+    }
+    &__gallery {
+      flex-direction: column-reverse;
+      gap: 16px;
+    }
+    &__thumbnails {
+      flex-direction: row;
+      gap: 16px;
+      justify-content: flex-start;
+      overflow-x: auto;
+      margin-right: -16px;
+    }
+    &__sizes {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .form {
+    &__body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .footer {
+    &__copy {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    &__top {
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__list {
+      display: none;
+    }
+    &__list--active {
+      display: flex;
+    }
+    &__group {
+      padding-top: 16px;
+      border-top: 1px solid $border-color;
+      &:last-child {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+    &__group-name {
+      margin-bottom: 0;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: url(../../images/icons/arrowUpIcon.svg);
+        right: 0;
+        top: 50%;
+        transform: rotateZ(180deg) translateY(50%);
+      }
+    }
+    &__group-name--active {
+      margin-bottom: 16px;
+      &::after {
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .popup {
+    &__content {
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+    &__text {
+      padding: 60px 24px;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}

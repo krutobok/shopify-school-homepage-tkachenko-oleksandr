@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="  Original sneakers from Nike and other top brands that make every step feel special."
+    />
+    <meta name="keywords" content="Nike, sneakers" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu" aria-label="Main navigation">
+          <button
+            class="menu__burger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu-list"
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <a class="menu__logo" href="/" aria-label="Home">
+            <img
+              class="menu__logo-img"
+              src="images/Logo.svg"
+              alt="Nike Store logo"
+            />
+          </a>
+
+          <ul id="menu-list" class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link text-large" href="#">New & Featured</a>
+            </li>
+            <li class="menu__list-item">
+              <a
+                class="menu__list-link text-large"
+                href="/men"
+                aria-current="page"
+                >Men</a
+              >
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link text-large" href="#">Women</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link text-large" href="#">Kids</a>
+            </li>
+          </ul>
+
+          <a class="menu__cart" href="#cart" aria-label="Open shopping cart">
+            <img
+              class="menu__cart-img"
+              src="images/icons/cartIcon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div
+          class="hero__slider swiper"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Hero promotions"
+          aria-live="polite"
+        >
+          <div class="hero__slider-wrapper swiper-wrapper">
+            <div
+              class="hero__slide swiper-slide"
+              style="background-image: url('images/banners/banner-1.jpg')"
+              role="group"
+              aria-label="Slide 1 of 3"
+            >
+              <div class="container">
+                <div class="hero__slide-wrapper">
+                  <h1 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h1>
+                  <p class="hero__slide-text text-large">
+                    Original sneakers from Nike and other top brands that make
+                    every step<br />
+                    feel special.
+                  </p>
+                  <a class="btn hero__slide-btn" href="#">
+                    Shop the Collection
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="hero__slide swiper-slide"
+              style="background-image: url('images/banners/banner-2.jpg')"
+              role="group"
+              aria-label="Slide 2 of 3"
+            >
+              <div class="container">
+                <div class="hero__slide-wrapper">
+                  <h2 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h2>
+                  <p class="hero__slide-text text-large">
+                    Original sneakers from Nike and other top brands that make
+                    every step<br />
+                    feel special.
+                  </p>
+                  <a class="btn hero__slide-btn" href="#">
+                    Shop the Collection
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="hero__slide swiper-slide"
+              style="background-image: url('images/banners/banner-3.jpg')"
+              role="group"
+              aria-label="Slide 3 of 3"
+            >
+              <div class="container">
+                <div class="hero__slide-wrapper">
+                  <h2 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h2>
+                  <p class="hero__slide-text text-large">
+                    Original sneakers from Nike and other top brands that make
+                    every step<br />
+                    feel special.
+                  </p>
+                  <a class="btn hero__slide-btn" href="#">
+                    Shop the Collection
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hero__slider-pagination swiper-pagination"
+            aria-label="Hero slider pagination"
+          ></div>
+        </div>
+      </section>
+      <section class="featured-collection section">
+        <div class="container">
+          <div class="featured-collection__wrapper">
+            <h2 class="featured-collection__title title-small">
+              Featured Collection
+            </h2>
+            <div class="featured-collection__slider swiper">
+              <div class="featured-collection__slider-wrapper swiper-wrapper">
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-streakfly-2.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-streakfly-2.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-streakfly-2.jpg"
+                      alt="Nike Streakfly 2 photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Streakfly 2
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $300.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="
+                        images/featured_collection/nike-pegasus-premium.webp
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        images/featured_collection/nike-pegasus-premium.jpg
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-pegasus-premium.jpg"
+                      alt="Nike Pegasus Premium photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Pegasus Premium
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $350.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-pegasus-41.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-pegasus-41.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-pegasus-41.jpg"
+                      alt=" Nike Pegasus 41 photo"
+                    />
+                  </picture>
+
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Pegasus 41
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $280.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-revolution.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-revolution.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-revolution.jpg"
+                      alt="Nike Revolution 7 photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Revolution 7
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $440.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-streakfly-2.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-streakfly-2.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-streakfly-2.jpg"
+                      alt="Nike Streakfly 2 photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Streakfly 2
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $300.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="
+                        images/featured_collection/nike-pegasus-premium.webp
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        images/featured_collection/nike-pegasus-premium.jpg
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-pegasus-premium.jpg"
+                      alt="Nike Pegasus Premium photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Pegasus Premium
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $350.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-pegasus-41.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-pegasus-41.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-pegasus-41.jpg"
+                      alt=" Nike Pegasus 41 photo"
+                    />
+                  </picture>
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Pegasus 41
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $280.00
+                  </p>
+                </div>
+
+                <div class="featured-collection__slide swiper-slide">
+                  <picture>
+                    <source
+                      srcset="images/featured_collection/nike-revolution.webp"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="images/featured_collection/nike-revolution.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="featured-collection__slide-img"
+                      src="images/featured_collection/nike-revolution.jpg"
+                      alt="Nike Revolution 7 photo"
+                    />
+                  </picture>
+
+                  <p class="featured-collection__slide-name text-large">
+                    Nike Revolution 7
+                  </p>
+                  <p class="featured-collection__slide-price text-large">
+                    $440.00
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="featured-collection__slider-button--prev swiper-button-prev"
+              ></div>
+              <div
+                class="featured-collection__slider-button--next swiper-button-next"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq section">
+        <div class="container">
+          <h2 class="faq__title title-small">Frequently asked questions</h2>
+          <p class="faq__text text-large">
+            Answers to our most frequently asked questions are just one click
+            away.
+          </p>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <details class="faq__item-details">
+                <summary class="faq__item-summary text-large">
+                  What are Nike's delivery options?
+                </summary>
+                <p class="faq__item-content text-large">
+                  Delivery info goes here…
+                </p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__item-details">
+                <summary class="faq__item-summary text-large">
+                  What is Nike's returns policy?
+                </summary>
+                <p class="faq__item-content text-large">
+                  When you shop Nike online, either in the Nike App or on
+                  Nike.com, you can return items that are unworn and unwashed
+                  and still have their product tags attached within 30 days of
+                  purchase (some exceptions apply). That includes custom Nike By
+                  You sneakers.
+                </p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__item-details">
+                <summary class="faq__item-summary text-large">
+                  Where is my Nike order?
+                </summary>
+                <p class="faq__item-content text-large">
+                  Tracking info goes here…
+                </p>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details class="faq__item-details">
+                <summary class="faq__item-summary text-large">
+                  How do I find the right size and fit?
+                </summary>
+                <p class="faq__item-content text-large">
+                  Size guide info goes here…
+                </p>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product section">
+        <div class="container">
+          <div class="product__wrapper">
+            <div class="product__gallery">
+              <div class="product__thumbnails" role="tablist">
+                <button
+                  class="product__thumb product__thumb--active"
+                  aria-label="change main product photo to photo 1"
+                  aria-selected="true"
+                >
+                  <img
+                    class="product__thumb-img product__img--mini"
+                    src="images/products/nike_air_max_plus/color1-1.jpg"
+                    alt="white Nike Air Max Plus photo 1"
+                  />
+                </button>
+                <button
+                  class="product__thumb"
+                  aria-label="change main product photo to photo 2"
+                  aria-selected="false"
+                >
+                  <img
+                    class="product__thumb-img product__img--mini"
+                    src="images/products/nike_air_max_plus/color1-2.jpg"
+                    alt="white Nike Air Max Plus photo 2"
+                  />
+                </button>
+                <button
+                  class="product__thumb"
+                  aria-label="change main product photo to photo 3"
+                  aria-selected="false"
+                >
+                  <img
+                    class="product__thumb-img product__img--mini"
+                    src="images/products/nike_air_max_plus/color1-3.jpg"
+                    alt="white Nike Air Max Plus photo 3"
+                  />
+                </button>
+                <button
+                  class="product__thumb"
+                  aria-label="change main product photo to photo 4"
+                  aria-selected="false"
+                >
+                  <img
+                    class="product__thumb-img product__img--mini"
+                    src="images/products/nike_air_max_plus/color1-4.jpg"
+                    alt="white Nike Air Max Plus photo 4"
+                  />
+                </button>
+                <button
+                  class="product__thumb"
+                  aria-label="change main product photo to photo 5"
+                  aria-selected="false"
+                >
+                  <img
+                    class="product__thumb-img product__img--mini"
+                    src="images/products/nike_air_max_plus/color1-5.jpg"
+                    alt="white Nike Air Max Plus photo 5"
+                  />
+                </button>
+              </div>
+
+              <div class="product__main">
+                <div class="product__badge">
+                  <img
+                    class="product__badge-img"
+                    src="images/icons/starIcon.svg"
+                    alt="star icon"
+                  />
+                  <span class="product__badge-text text-medium"
+                    >Highly Rated</span
+                  >
+                </div>
+                <img
+                  class="product__image"
+                  src="images/products/nike_air_max_plus/color1-1.jpg"
+                  alt="white Nike Air Max Plus photo 1"
+                />
+              </div>
+            </div>
+
+            <div class="product__info">
+              <div class="product__text-inner">
+                <h2 class="product__title title-small">Nike Air Max Plus</h2>
+                <p class="product__price text-large" data-price="$280.00">
+                  $280.00
+                </p>
+              </div>
+
+              <div class="product__colors">
+                <img
+                  class="product__color product__color--active product__img--mini"
+                  src="images/products/nike_air_max_plus/color1-1.jpg"
+                  alt="white sneakers color"
+                  data-price="$260.00"
+                  data-color="1"
+                  data-alt-for-group="white Nike Air Max Plus"
+                  role="button"
+                  aria-label="set product color to white"
+                />
+                <img
+                  class="product__color product__img--mini"
+                  src="images/products/nike_air_max_plus/color2-1.jpg"
+                  alt="black sneakers color"
+                  data-price="$270.00"
+                  data-color="2"
+                  data-alt-for-group="black Nike Air Max Plus"
+                  role="button"
+                  aria-label="set product color to black"
+                />
+                <img
+                  class="product__color product__img--mini"
+                  src="images/products/nike_air_max_plus/color3-1.jpg"
+                  alt="pink sneakers color"
+                  data-price="$280.00"
+                  data-color="3"
+                  data-alt-for-group="pink Nike Air Max Plus"
+                  role="button"
+                  aria-label="set product color to pink"
+                />
+              </div>
+              <div class="product__size-inner">
+                <p class="product__size-text text-medium">Select Size:</p>
+                <div class="product__sizes">
+                  <button class="product__size product__size--active btn">
+                    UK 5.5
+                  </button>
+                  <button class="product__size btn">UK 6 (EU 39)</button>
+                  <button class="product__size btn">UK 6 (EU 40)</button>
+                  <button class="product__size btn">UK 6.5</button>
+                  <button class="product__size btn">UK 7</button>
+                  <button class="product__size btn">UK 7.5</button>
+                </div>
+              </div>
+
+              <button class="product__btn btn btn-dark">Add To Bag</button>
+
+              <p class="product__desc text-medium">
+                Let your attitude have the edge in your Nike Air Max Plus, a
+                Tuned Air experience that offers premium stability and
+                unbelievable cushioning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form section">
+        <div class="container">
+          <h2 class="form__title title-small">Need help?</h2>
+
+          <form class="form__body" id="contactForm" novalidate>
+            <div class="form__field">
+              <label class="form__label text-large" for="name">Name</label>
+              <input
+                class="form__input input text-large"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label text-large" for="number">Number</label>
+              <input
+                class="form__input input text-large"
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="Enter Number"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label text-large" for="email">Email</label>
+              <input
+                class="form__input input text-large"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label text-large" for="message"
+                >Message</label
+              >
+              <textarea
+                class="form__textarea input text-large"
+                id="message"
+                name="message"
+                placeholder="Enter Message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="form__submit btn btn-dark" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__group">
+            <p class="footer__group-name text-large">Resources</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Find a Store</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Nike Journal</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Become a Member</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Feedback</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Promo Codes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <p class="footer__group-name text-large">Help</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Get Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Order Status</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#"
+                  >Shipping and Delivery</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Returns</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Payment Options</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <p class="footer__group-name text-large">Company</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">About Nike</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">News</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Careers</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Investors</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Sustainability</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <p class="footer__group-name text-large">Menu</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">New & Featured</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Men</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Women</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link text-medium" href="#">Kids</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copy-text text-medium">
+            © 2025 Nike, Inc. All rights reserved
+          </p>
+          <a class="footer__copy-link text-medium" href="#">Terms of Use</a
+          ><a class="footer__copy-link text-medium" href="#"
+            >Privacy & Cookie Policy</a
+          ><a class="footer__copy-link text-medium" href="#"
+            >Privacy & Cookie Setting</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__content">
+        <button class="popup__close" aria-label="close popup"></button>
+
+        <div class="popup__text">
+          <h2 class="popup__title title">Here’s $10 Off Your First Order!</h2>
+          <p class="popup__desc text-large">
+            Join our newsletter and get a $10 discount code sent straight to
+            your inbox. New customers only.
+          </p>
+          <form class="popup__form" id="popupForm">
+            <label class="popup__label text-large" for="popupEmail"
+              >Email</label
+            >
+            <input
+              class="popup__input input text-large"
+              type="email"
+              id="popupEmail"
+              placeholder="Enter Email"
+              required
+            />
+            <button class="popup__btn btn btn-dark" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="popup__image-inner">
+          <img
+            class="popup__image"
+            src="images/popup-image.jpg"
+            alt="promo banner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

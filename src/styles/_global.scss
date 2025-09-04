@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-color;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: $container-size;
+  padding: 0 $container-padding;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title-small {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.text-large {
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-medium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: $primary-bg-color;
+  color: $primary-color;
+  transition: all 0.3s;
+}
+.btn-dark {
+  background-color: $primary-color;
+  color: $primary-bg-color;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+.section {
+  padding: 80px 0;
+}
+.input {
+  padding: 16px;
+  border: 1px solid $border-color;
+  width: 100%;
+  border-radius: 8px;
+  color: $primary-color;
+  &::placeholder {
+    color: $secondary-color;
+  }
+}
